@@ -1,153 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!--Mobile Metas--> 
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!--Site Metas--> 
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="author" content="Juana Wolff">
-    <title>Fundamentals of Computer Engineering</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif; 
-            display: flex;
-            flex-direction: column; 
-            align-items: center;
-        }
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv= "X-UA-Compatible" content= "IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="keywords" content="" />
+        <meta name= "description" content="" />
+        <meta name= "author" content="" />
 
-        .container {
-            max-width: 1000px; 
-            width: 100%;
-            margin: 0 auto;
-        }
-    
-        .header {
-            background-color: #333;
-            color: white;
-            padding: 20px 0; 
-            text-align: center;
-        }
+        <link rel="stylesheet" type="text/css" href="./css/styles.css">
 
-        .header-content { 
-            display: flex; 
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .header-title {
-            font-size: 1.5rem; 
-            padding-left: 20px;
-        }
+        <title> Fundamentals of Computer Engineering</title>
+    </head>
 
-        .nav {
-            display: flex;
-            gap: 20px;
-        }
-        
-        .nav a {
-            color: white;
-            text-decoration: none; 
-            font-size: 1rem;
-            padding: 5px 10px; 
-            border-radius: 5px; 
-            transition: background-color 0.3s;
-        }
-        
-        .nav a:hover {
-            background-color:#555;
-        }
-
-        .nav a.active {
-            background-color: red;
-            color: white;
-        }
-
-        .content {
-            padding: 20px;
-        }
-
-        .menu-content {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            gap: 20px;
-            padding: 20px;
-            background-color: #f5f5f5;
-            margin-top: 20px;
-        }
-        
-        .menu-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-        
-        .menu-icon {
-            width: 40px;
-            height: 40px;
-            margin-bottom: 10px;
-        }
-
-        .footer-section { 
-            max-width: 1000px; 
-            width: 100%;
-            background-color: #333; 
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-        
-        .footer-section a {
-            color: red;
-            text-decoration: none;
-        }
-        
-        .footer-section a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
-    <header class="container header">
-        <div class="header-content">
-            <div class="header-title">Webpage Header</div>
-            <nav class="nav">
-                <a href="#" class="active">Home</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
+    <body>
+        <header class="container">
+            <div class="header-title"> <b>PRACTICAL WORK II</b> </div>
+            <nav>
+                <a href="index.html" class="active">Home</a>
+                <a href="./pages/about.html">About</a>
+                <a href="./pages/topic.html">Topic</a>
+                <a href="./pages/degree.html">Degree</a>
+                <a href="./pages/fce.html">FCE</a>
+                <a href="./pages/net.html">Net</a>
+                <a href="./pages/contact.html">Contact</a>
             </nav>
-        </div>
-    </header>
-    
-    <main class="container">
-        <div class="content">
-            <h1>Welcome to the Webpage</h1>
-            <p>This is the central area of the webpage where you can include your content.</p>
-        </div>
-        
-        <div class="menu-content">
-            <div class="menu-item">
-                <img src="./images/location-white.png" alt="Location Icon" class="menu-icon"> 
-                <p>Location</p>
+        </header>
+        <main class="container">
+            <div class="content">
+                <h2>Welcome to the Webpage</h2>
+                <p>Where knowledge learned in FCE class will be demonstrated.</p>
+                <div id="1" class="container-content">
+                    <div class="header-with-image">
+                        <img src="./images/profile.png" alt="Profile Icon" class="header-image">
+                        <h2>ABOUT SECTION</h2>
+                    </div>
+                    <p>Shows who the creator of this webpage is with some further insights.</p>
+                </div>
+                <div id="2" class="container-content">
+                    <div class="header-with-image">
+                        <img src="./images/topic.webp" alt="Topic Icon" class="header-image">
+                        <h2>TOPIC SECTION</h2>
+                    </div>  
+                    <p>Reveals detailed content about Generative AI in Video Games learned through a research paper for class.</p>
+                </div>
+                <div id="3" class="container-content">
+                    <div class="header-with-image">
+                        <img src="./images/degree.webp" alt="Degree Icon" class="header-image">
+                        <h2>DEGREE SECTION</h2>
+                    </div>
+                    <p>Provides an overview of double degree on Mathematical and Computer Engineering.</p>
+                </div>
+                <div id="4" class="container-content">
+                    <div class="header-with-image">
+                        <img src="./images/fce.png" alt="FCE Icon" class="header-image">
+                        <h2>FCE SECTION</h2>
+                    </div>
+                <p>Displays specificly learned information throughout the course.</p>
+                </div>
+                <div id="5" class="container-content">
+                    <div class="header-with-image">
+                        <img src="./images/network.png" alt="Network Icon" class="header-image">
+                        <h2>NET SECTION</h2>
+                    </div>
+                <p>Contains links to other classmates' webpages.</p>
+                </div>
+                <div id="6" class="container-content">
+                    <div class="header-with-image">
+                        <img src="./images/contact.png" alt="Contact Icon" class="header-image">
+                        <h2>CONTACT SECTION</h2>
+                    </div>
+                <p>Get in touch with the author.</p>
+                </div>
             </div>
-            <div class="menu-item">
-                <img src="./images/telephone-white.png" alt="Phone Icon" class="menu-icon">
-                <p>+02 1234567890</p> 
+            <div class="menu">
+                <div class="menu-content">
+                    <div class="menu-item">
+                        <img src="./images/location.png" alt="Location Icon" class="menu-icon">
+                        <p>Madrid, Spain</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./images/phone.png" alt="Phone icon" class="menu-icon">
+                        <p>+34 672007605</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./images/email.png" alt="Email Icon" class="menu-icon">
+                        <p>juanawolff05@gmail.com</p>
+                    </div>
+                </div>
             </div>
-            <div class="menu-item">
-                <img src="./images/envelope-white.png" alt="Email Icon" class="menu-icon">
-                <p>demo@gmail.com</p>
-            </div>
-        </div>
-    </main>
-
-    <footer class="footer-section">
-        <p>&copy; 2025 All Rights Reserved. Design by <a href="#">Juana Wolff</a></p>
-    </footer>
-</body>
+        </main>
+        <footer class="footer_section">
+            <p>&copy; 2025 All Rights Reserved. Design by <a href="./pages/about.html">Juana Wolff R.</a></p>
+        </footer>
+    </body>
 </html>
